@@ -3,13 +3,14 @@ import React, { Component } from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
 
 // create a component
-const PostListScreen = (props) => {
+const ButtonComponent = () => {
   return (
     <View style={styles.container}>
-      <Text style={{ fontSize: 20 }}>Post Screen</Text>
       <Button
-        title="Go home"
-        onPress={() => props.navigation.navigate("Home")}
+        title="Register"
+        onPress={(props) => console.log(props)}
+        color="yellow"
+        disabled={true}
       />
     </View>
   );
@@ -21,9 +22,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "pink",
+    backgroundColor: "#2c3e50",
   },
 });
 
 //make this component available to the app
-export default PostListScreen;
+export default ButtonComponent;

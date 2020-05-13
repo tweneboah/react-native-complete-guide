@@ -4,7 +4,14 @@ import { View, Text, Button } from "react-native";
 const HomeScreen = (props) => {
   console.log(props.navigation.navigate);
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "purple",
+      }}
+    >
       <Text style={{ fontSize: 30 }}>Home</Text>
 
       <Button

@@ -1,16 +1,14 @@
 //import liraries
 import React, { Component } from "react";
-import { View, Text, StyleSheet, Button } from "react-native";
+import { View, Text, StyleSheet, ActivityIndicator } from "react-native";
+
+//ActivityIndicator: Displays a circular loading indicator.
 
 // create a component
-const PostListScreen = (props) => {
+const ActitivityIndicatorComponentScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={{ fontSize: 20 }}>Post Screen</Text>
-      <Button
-        title="Go home"
-        onPress={() => props.navigation.navigate("Home")}
-      />
+      <ActivityIndicator size="large" color="yellow" />
     </View>
   );
 };
@@ -21,9 +19,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "pink",
+    backgroundColor: "#2c3e50",
   },
 });
 
 //make this component available to the app
-export default PostListScreen;
+export default ActitivityIndicatorComponentScreen;
